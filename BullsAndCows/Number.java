@@ -1,13 +1,12 @@
-
 /**
- * Write a description of class Number here.
+ * Class Number for the game Bulls and Cows.
  *
  * @author Sapir
  * @version 2/1/23
  */
 public class Number
 {
-    public int _num;
+    private int _num;
     private final static int DIGITS=4;
 
     public Number () {
@@ -23,6 +22,10 @@ public class Number
             _num = n;
         else 
             _num = 1000;
+    }
+    
+    public int getNum() {
+        return _num;
     }
 
     public int howManyHits(Number other) {
