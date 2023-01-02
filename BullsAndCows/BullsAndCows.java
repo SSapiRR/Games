@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /**
- * GameBullsAndCows.
+ * Game Bulls and Cows
  *
  * @author Sapir
  * @version 2/1/23
@@ -23,7 +23,7 @@ public class GameBullsAndCows
             int hits = comp.howManyHits(user);
             int almost = comp.howManyAlmost(user);
             if (hits==DIG) {
-                System.out.println("You won! The number is "+comp._num+
+                System.out.println("You won! The number is "+comp.getNum()+
                 ".\nit took u "+count+" guesses");
                 win= true;
             }
